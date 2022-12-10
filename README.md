@@ -37,15 +37,17 @@ The wave propagation model is easy to describe the perporty of diffractive eleme
 - 2021 Single-shot Hyperspectral-Depth Imaging with Learned Diffractive Optics. [paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Baek_Single-Shot_Hyperspectral-Depth_Imaging_With_Learned_Diffractive_Optics_ICCV_2021_paper.pdf), [project](http://vclab.kaist.ac.kr/iccv2021/dataset.html), [video](https://www.youtube.com/watch?v=Q-9PnlkxnMs)
 - 2022 Quantization-aware Deep Optics for Diffractive Snapshot Hyperspectral Imaging. [paper](https://openaccess.thecvf.com/content/CVPR2022/papers/Li_Quantization-Aware_Deep_Optics_for_Diffractive_Snapshot_Hyperspectral_Imaging_CVPR_2022_paper.pdf), [code](https://github.com/lg-li/QuantizationAwareDeepOptics)
 
-#### DOE + Thin lens
-
+#### Singlet lens
 - 2019 Deep optics for monocular depth estimation and 3D object detection. [paper](https://arxiv.org/abs/1904.08601), [project](http://www.computationalimaging.org/publications/deep-optics-depth/)
+- 2020 Deep Optics for Single-shot High-dynamic-range Imaging. [paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Metzler_Deep_Optics_for_Single-Shot_High-Dynamic-Range_Imaging_CVPR_2020_paper.pdf), [project](https://www.computationalimaging.org/publications/deep-optics-hdr/), [code](https://github.com/computational-imaging/DeepOpticsHDR)
+  
+
+#### DOE + Thin lens
 - 2020 Learning Rank-1 Diffractive Optics for Single-shot High Dynamic Range Imaging. [paper](https://vccimaging.org/Publications/Sun2020LearningRank1HDR/Sun2020LearningRank1HDR_supp.pdf), [project](https://vccimaging.org/Publications/Sun2020LearningRank1HDR/)
 - 2020 End-to-end Learned, Optically Coded Super-resolution SPAD Camera. [paper](https://vccimaging.org/Publications/Sun2019SingleShotSPAD/Sun2019SingleShotSPAD.pdf), [project](https://vccimaging.org/Publications/Sun2019SingleShotSPAD/)
-- 2020 Deep Optics for Single-shot High-dynamic-range Imaging. [paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Metzler_Deep_Optics_for_Single-Shot_High-Dynamic-Range_Imaging_CVPR_2020_paper.pdf), [project](https://www.computationalimaging.org/publications/deep-optics-hdr/), [code](https://github.com/computational-imaging/DeepOpticsHDR)
 - 2021 Depth from Defocus with Learned Optics for Imaging and Occlusion-aware Depth Estimation. [paper](http://www.computationalimaging.org/wp-content/uploads/2021/04/DeepDfD_ICCP2021.pdf), [project](https://www.computationalimaging.org/publications/deepopticsdfd/), [code](https://github.com/computational-imaging/DepthFromDefocusWithLearnedOptics)
 - 2022 Seeing Through Obstructions with Diffractive Cloaking. [paper](https://light.princeton.edu/wp-content/uploads/2022/07/seeing_through_obstructions_main.pdf), [project](https://light.princeton.edu/publication/seeing-through-obstructions/), [code](https://github.com/princeton-computational-imaging/SeeThroughObstructions)
-- 2022 Hybrid diffractive optics design via hardware-in-the-loop methodology for achromatic extended-depth-of-field imaging. [paper](https://opg.optica.org/DirectPDFAccess/CC2AAA95-64FA-4A73-99FAEAA61B4A97CF_494463/oe-30-18-32633.pdf?da=1&id=494463&seq=0&mobile=no)
+- 2022 Hybrid diffractive optics design via hardware-in-the-loop methodology for achromatic extended-depth-of-field imaging. [paper](https://opg.optica.org/oe/fulltext.cfm?uri=oe-30-18-32633&id=494463)
 
 #### Others (Diffuser, Mask, Metasurface)
 
