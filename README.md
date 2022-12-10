@@ -37,24 +37,30 @@ The wave propagation model is easy to describe the perporty of diffractive eleme
 - 2021 Single-shot Hyperspectral-Depth Imaging with Learned Diffractive Optics. [paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Baek_Single-Shot_Hyperspectral-Depth_Imaging_With_Learned_Diffractive_Optics_ICCV_2021_paper.pdf), [project](http://vclab.kaist.ac.kr/iccv2021/dataset.html), [video](https://www.youtube.com/watch?v=Q-9PnlkxnMs)
 - 2022 Quantization-aware Deep Optics for Diffractive Snapshot Hyperspectral Imaging. [paper](https://openaccess.thecvf.com/content/CVPR2022/papers/Li_Quantization-Aware_Deep_Optics_for_Diffractive_Snapshot_Hyperspectral_Imaging_CVPR_2022_paper.pdf), [code](https://github.com/lg-li/QuantizationAwareDeepOptics)
 
-#### Singlet lens
-- 2019 Deep optics for monocular depth estimation and 3D object detection. [paper](https://arxiv.org/abs/1904.08601), [project](http://www.computationalimaging.org/publications/deep-optics-depth/)
-- 2020 Deep Optics for Single-shot High-dynamic-range Imaging. [paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Metzler_Deep_Optics_for_Single-Shot_High-Dynamic-Range_Imaging_CVPR_2020_paper.pdf), [project](https://www.computationalimaging.org/publications/deep-optics-hdr/), [code](https://github.com/computational-imaging/DeepOpticsHDR)
-  
 
-#### DOE + Thin lens
+
+#### DOE + Thin lens (not optimizable)
 - 2020 Learning Rank-1 Diffractive Optics for Single-shot High Dynamic Range Imaging. [paper](https://vccimaging.org/Publications/Sun2020LearningRank1HDR/Sun2020LearningRank1HDR_supp.pdf), [project](https://vccimaging.org/Publications/Sun2020LearningRank1HDR/)
+- 2020 Deep Optics for Single-shot High-dynamic-range Imaging. [paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Metzler_Deep_Optics_for_Single-Shot_High-Dynamic-Range_Imaging_CVPR_2020_paper.pdf), [project](https://www.computationalimaging.org/publications/deep-optics-hdr/), [code](https://github.com/computational-imaging/DeepOpticsHDR)
 - 2020 End-to-end Learned, Optically Coded Super-resolution SPAD Camera. [paper](https://vccimaging.org/Publications/Sun2019SingleShotSPAD/Sun2019SingleShotSPAD.pdf), [project](https://vccimaging.org/Publications/Sun2019SingleShotSPAD/)
 - 2021 Depth from Defocus with Learned Optics for Imaging and Occlusion-aware Depth Estimation. [paper](http://www.computationalimaging.org/wp-content/uploads/2021/04/DeepDfD_ICCP2021.pdf), [project](https://www.computationalimaging.org/publications/deepopticsdfd/), [code](https://github.com/computational-imaging/DepthFromDefocusWithLearnedOptics)
 - 2022 Seeing Through Obstructions with Diffractive Cloaking. [paper](https://light.princeton.edu/wp-content/uploads/2022/07/seeing_through_obstructions_main.pdf), [project](https://light.princeton.edu/publication/seeing-through-obstructions/), [code](https://github.com/princeton-computational-imaging/SeeThroughObstructions)
 - 2022 Hybrid diffractive optics design via hardware-in-the-loop methodology for achromatic extended-depth-of-field imaging. [paper](https://opg.optica.org/oe/fulltext.cfm?uri=oe-30-18-32633&id=494463)
 
-#### Others (Diffuser, Mask, Metasurface)
-
+#### MetaLens
 - 2020 Spectral DiffuserCam: lensless snapshot hyperspectral imaging with a spectral filter array. [paper](https://opg.optica.org/optica/fulltext.cfm?uri=optica-7-10-1298&id=440114), [code](https://github.com/Waller-Lab/SpectralDiffuserCam)
-- 2021 Mask-ToF: Learning Microlens Masks for Flying Pixel Correction in Time-of-Flight Imaging. [paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Chugunov_Mask-ToF_Learning_Microlens_Masks_for_Flying_Pixel_Correction_in_Time-of-Flight_CVPR_2021_paper.pdf), [project](https://light.princeton.edu/publication/mask-tof/), [code](https://github.com/princeton-computational-imaging/MaskToF)
 - 2021 Neural nano-optics for high-quality thin lens imaging. [paper](https://www.nature.com/articles/s41467-021-26443-0), [project](https://light.princeton.edu/publication/neural-nano-optics/), [code](https://github.com/Ethan-Tseng/Neural_Nano-Optics)
+
+#### Freeform lens
+- 2019 Deep optics for monocular depth estimation and 3D object detection. [paper](https://arxiv.org/abs/1904.08601), [project](http://www.computationalimaging.org/publications/deep-optics-depth/)
+
+#### Coded Aperture
+- 2021 Mask-ToF: Learning Microlens Masks for Flying Pixel Correction in Time-of-Flight Imaging. [paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Chugunov_Mask-ToF_Learning_Microlens_Masks_for_Flying_Pixel_Correction_in_Time-of-Flight_CVPR_2021_paper.pdf), [project](https://light.princeton.edu/publication/mask-tof/), [code](https://github.com/princeton-computational-imaging/MaskToF)s
 - 2021 Shift-variant color-coded diffractive spectral imaging system. [paper](https://opg.optica.org/optica/fulltext.cfm?uri=optica-8-11-1424&id=464500), [video](https://www.youtube.com/watch?v=KNu2ZPLnR50), [code](https://github.com/jorgebaccauis/Shift-Variant-System)
+
+<!-- #### Others (Diffuser, Mask, Metasurface) -->
+
+
 
 ### 2. With ray tracing
 
@@ -69,10 +75,8 @@ Conventional ray tracing focuses on PSF calculations, but recent works start to 
 #### Compound Lens
 
 - **2021 End-to-end complex lens design with differentiate ray tracing.** [paper](https://vccimaging.org/Publications/Sun2021DiffLens/Sun2021DiffLens.pdf), [project](https://vccimaging.org/Publications/Sun2021DiffLens/)
-
 - 2021 Differentiable Compound Optics and Processing Pipeline Optimization for End-To-end Camera Design. [paper](https://light.cs.princeton.edu/wp-content/uploads/2021/02/DeepCompoundOptics.pdf), [project](https://light.princeton.edu/publication/deep_compound_optics/)
 - 2021 Deep learning-enabled framework for automatic lens design starting point generation. [paper](https://opg.optica.org/DirectPDFAccess/3CCFC208-3A65-4ABB-8B196EC9543FBAD5_446872/oe-29-3-3841.pdf?da=1&id=446872&seq=0&mobile=no), [project](https://lensnet.herokuapp.com/)
-
 - **2021 dO: A differentiable engine for Deep Lens design of computational imaging systems.** [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9919421), [project](https://vccimaging.org/Publications/Wang2022DiffOptics/), [code](https://github.com/vccimaging/DiffOptics)
 
 - 2022 Automatic Lens Design based on Differentiable Ray-tracing. [paper](https://opg.optica.org/abstract.cfm?uri=COSI-2022-CTh4C.2), [project](https://vccimaging.org/Publications/Yang2022AutoLens/), [video](https://youtu.be/8JWXvGWOG54).
