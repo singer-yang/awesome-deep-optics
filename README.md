@@ -81,6 +81,7 @@ Conventional ray tracing focuses on PSF calculations, but recent works start to 
 
 - 2022 Automatic Lens Design based on Differentiable Ray-tracing. [paper](https://opg.optica.org/abstract.cfm?uri=COSI-2022-CTh4C.2), [project](https://vccimaging.org/Publications/Yang2022AutoLens/), [video](https://youtu.be/8JWXvGWOG54).
 - 2022 Computational Optics for Mobile Terminals in Mass Production. [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9864277)
+- 2022 The Differentiable Lens: Compound Lens Search over Glass Surfaces and Materials for Object Detection. [paper](https://arxiv.org/abs/2212.04441)
 
 #### Others (Sensor, Glass)
 
