@@ -6,6 +6,7 @@ Deep optics/end-to-end optical design learns optical elements simutaneously with
 
 - find the best match between optics and network.
 - encode more information from the physical world.
+- minimize the cost and complexity.
 
 ## Contribution
 
