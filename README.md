@@ -1,10 +1,9 @@
-# Awesome Deep Optics/End-to-end Optical Design
+# Awesome Deep Optics/End-to-End Optical Design
 
 A curated list of awesome deep optics papers, inspired by [awesome-computer-vision](https://github.com/jbhuang0604/awesome-computer-vision).
 
 Deep optics/end-to-end optical design learns optical elements simutaneously with the image processing network, with the goal to:
 
-- find the best match between optics and network.
 - encode more information from the physical world.
 - minimize the cost and complexity.
 
@@ -65,6 +64,7 @@ The wave propagation model represents each optical element as a phase mask. It i
 Ray tracing is the most common technique in optical design (e.g., ZEMAX and CodeV). In the field of deep optics, people usually compute the point spread function (PSF) and convolve it with the input, or perform ray-tracing-based rendering to simulate sensor images. Most ray tracing works are incoherent, but there are also some works of coherent ray tracing.
 
 #### Lens
+
 - 2019 Learned large field-of-view imaging with thin-plate optics. [project](https://vccimaging.org/Publications/Peng&Sun2019LearnLargeFOV/), [video](https://dl.acm.org/doi/10.1145/3355089.3356526), [code](https://github.com/qilinsun/LearnedLargeFOV)
 - **2021 End-to-end complex lens design with differentiate ray tracing.** [paper](https://vccimaging.org/Publications/Sun2021DiffLens/Sun2021DiffLens.pdf), [project](https://vccimaging.org/Publications/Sun2021DiffLens/)
 - 2021 End-to-end computational optics with a singlet lens for large depth-of-field imaging. [paper](https://opg.optica.org/DirectPDFAccess/D3ED35BC-DC94-4D40-B027C5426D406F5C_458026/oe-29-18-28530.pdf?da=1&id=458026&seq=0&mobile=no)
