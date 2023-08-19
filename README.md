@@ -4,12 +4,13 @@ A curated list of awesome deep optics papers, inspired by [awesome-computer-visi
 
 Deep optics/end-to-end optical design learns optical elements simutaneously with the image processing network, with the goal to:
 
-- encode more information from the physical world.
-- minimize the cost and complexity.
+- Encode more information from the physical world, for example, hyperspectral imaging.
+- Reduce physical size and cost of an imaging system, for example, compact camera.
 
-## Contribution
+In deep optics, we usually care about two things:
 
-Please feel free to open pull requests or email (xinge.yang@kaust.edu.sa) to contibute to this repo.
+* **Differentiable simulation.** A differentiable image formation model enables us to optimize the optics together with the network. So I will classify papers according to different image formation models. Existing methods usually treat the diffraction and aberration separately, either simplifying the optical system as a series of thin elements to capture the wave optical effects, or doing ray tracing to capture the full geometry of the system.
+* **Fabrication.** When reading the papers, do pay attention to their fabrication/manufacturing methods in the experiments. 
 
 ## Knowledge Base
 
@@ -25,39 +26,40 @@ The following are some materials I think will help you enter this field.
 
 ## Papers
 
-A differentiable image formation model enables us to optimize the optics with the network. So in this part I classify papers according to the image formation model. The classical methods treat the diffraction and aberration separately, either simplifying the optical system as a series of thin elements to capture the wave optical effects, or doing ray tracing to capture the full geometry of the system.
-
 ### 1. Wave propagation model
 
-The wave propagation model represents each optical element as a phase mask. It is commonly used in diffractive optical element (DOE) design, sometimes with a thin lens. However, it is not accurate for thick and aspherical lenses.
+In the wave propagation model, each optical element (DOE, lens, aperture, et al.) is represented as a phase mask. This idealized optics is easy to simulate; however, it is not accurate enough and cannot model optical aberrations.
 
 #### Single DOE or metasurface
 
-- 2016 Encoded diffractive optics for full-spectrum computational imaging. [paper](https://www.nature.com/articles/srep33543.pdf)
-- 2016 The diffractive achromat full spectrum computational imaging with diffractive optics. [paper](https://dl.acm.org/doi/pdf/10.1145/2897824.2925941), [code](https://github.com/vsitzmann/deepoptics), [slides](https://www.slideshare.net/StanfordComputationalImaging/endtoend-optimization-of-cameras-and-image-processing-siggraph-2018), [video](https://dl.acm.org/doi/10.1145/2897824.2925941).
-- **2018 End-to-end optimization of optics and image processing for achromatic extended depth of field and super-resolution imaging.** [paper](https://dl.acm.org/doi/pdf/10.1145/3197517.3201333), [project](https://www.computationalimaging.org/publications/end-to-end-optimization-of-optics-and-image-processing-for-achromatic-extended-depth-of-field-and-super-resolution-imaging/), [code](https://github.com/vsitzmann/deepoptics).
+- 2016 Encoded diffractive optics for full-spectrum computational imaging. [paper](https://www.nature.com/articles/srep33543.pdf), [supp](https://static-content.springer.com/esm/art%3A10.1038%2Fsrep33543/MediaObjects/41598_2016_BFsrep33543_MOESM1_ESM.pdf)
+- 2016 The diffractive achromat full spectrum computational imaging with diffractive optics. [paper](https://dl.acm.org/doi/pdf/10.1145/2897824.2925941), [code](https://github.com/vsitzmann/deepoptics), [slides](https://www.slideshare.net/StanfordComputationalImaging/endtoend-optimization-of-cameras-and-image-processing-siggraph-2018), [video](https://dl.acm.org/doi/10.1145/2897824.2925941)
+- **2018 End-to-end optimization of optics and image processing for achromatic extended depth of field and super-resolution imaging.** [paper](https://dl.acm.org/doi/pdf/10.1145/3197517.3201333), [project](https://www.computationalimaging.org/publications/end-to-end-optimization-of-optics-and-image-processing-for-achromatic-extended-depth-of-field-and-super-resolution-imaging/), [code](https://github.com/vsitzmann/deepoptics)
 - 2019 Compact Snapshot Hyperspectral Imaging with Diffracted Rotation. [paper](https://vccimaging.org/Publications/Jeon2019Hyperspectral/Jeon2019Hyperspectral.pdf), [project](https://vccimaging.org/Publications/Jeon2019Hyperspectral/)
-- 2020 Learned rotationally symmetric diffractive achromat for full-spectrum computational imaging. [paper](https://opg.optica.org/optica/fulltext.cfm?uri=optica-7-10-1298&id=440114), [project](https://www.computationalimaging.org/publications/learned-rotationally-symmetric-diffractive-achromat/).
+- 2020 Learned rotationally symmetric diffractive achromat for full-spectrum computational imaging. [paper](https://opg.optica.org/optica/fulltext.cfm?uri=optica-7-8-913&id=433999), [project (supp, video)](https://www.computationalimaging.org/publications/learned-rotationally-symmetric-diffractive-achromat/)
 - 2021 Single-shot Hyperspectral-Depth Imaging with Learned Diffractive Optics. [paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Baek_Single-Shot_Hyperspectral-Depth_Imaging_With_Learned_Diffractive_Optics_ICCV_2021_paper.pdf), [project](http://vclab.kaist.ac.kr/iccv2021/dataset.html), [video](https://www.youtube.com/watch?v=Q-9PnlkxnMs)
-- **2021 Neural nano-optics for high-quality thin lens imaging. [paper](https://www.nature.com/articles/s41467-021-26443-0), [project](https://light.princeton.edu/publication/neural-nano-optics/), [code](https://github.com/Ethan-Tseng/Neural_Nano-Optics)**
+- **2021 Neural nano-optics for high-quality thin lens imaging.** [paper](https://www.nature.com/articles/s41467-021-26443-0), [project](https://light.princeton.edu/publication/neural-nano-optics/), [code](https://github.com/Ethan-Tseng/Neural_Nano-Optics)
 - 2022 Quantization-aware Deep Optics for Diffractive Snapshot Hyperspectral Imaging. [paper](https://openaccess.thecvf.com/content/CVPR2022/papers/Li_Quantization-Aware_Deep_Optics_for_Diffractive_Snapshot_Hyperspectral_Imaging_CVPR_2022_paper.pdf), [code](https://github.com/lg-li/QuantizationAwareDeepOptics)
 
 #### DOE + Thin lens (not optimizable)
 
-- 2020 Learning Rank-1 Diffractive Optics for Single-shot High Dynamic Range Imaging. [paper](https://vccimaging.org/Publications/Sun2020LearningRank1HDR/Sun2020LearningRank1HDR_supp.pdf), [project](https://vccimaging.org/Publications/Sun2020LearningRank1HDR/)
+- **2020 Learning Rank-1 Diffractive Optics for Single-shot High Dynamic Range Imaging.** [paper](https://vccimaging.org/Publications/Sun2020LearningRank1HDR/Sun2020LearningRank1HDR_supp.pdf), [project](https://vccimaging.org/Publications/Sun2020LearningRank1HDR/)
 - 2020 Deep Optics for Single-shot High-dynamic-range Imaging. [paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Metzler_Deep_Optics_for_Single-Shot_High-Dynamic-Range_Imaging_CVPR_2020_paper.pdf), [project](https://www.computationalimaging.org/publications/deep-optics-hdr/), [code](https://github.com/computational-imaging/DeepOpticsHDR)
 - 2020 End-to-end Learned, Optically Coded Super-resolution SPAD Camera. [paper](https://vccimaging.org/Publications/Sun2019SingleShotSPAD/Sun2019SingleShotSPAD.pdf), [project](https://vccimaging.org/Publications/Sun2019SingleShotSPAD/)
 - 2021 Depth from Defocus with Learned Optics for Imaging and Occlusion-aware Depth Estimation. [paper](http://www.computationalimaging.org/wp-content/uploads/2021/04/DeepDfD_ICCP2021.pdf), [project](https://www.computationalimaging.org/publications/deepopticsdfd/), [code](https://github.com/computational-imaging/DepthFromDefocusWithLearnedOptics)
 - 2022 Seeing Through Obstructions with Diffractive Cloaking. [paper](https://light.princeton.edu/wp-content/uploads/2022/07/seeing_through_obstructions_main.pdf), [project](https://light.princeton.edu/publication/seeing-through-obstructions/), [code](https://github.com/princeton-computational-imaging/SeeThroughObstructions)
 - 2022 Hybrid diffractive optics design via hardware-in-the-loop methodology for achromatic extended-depth-of-field imaging. [paper](https://opg.optica.org/oe/fulltext.cfm?uri=oe-30-18-32633&id=494463)
 
-#### Others
+#### Lens (with Zernike basis)
 
 - 2019 Deep optics for monocular depth estimation and 3D object detection. [paper](https://arxiv.org/abs/1904.08601), [project](http://www.computationalimaging.org/publications/deep-optics-depth/)
+- 2021 Learning Privacy-Preserving Optics for Human Pose Estimation. [paper](https://carloshinojosa.me/files/ICCV2021/05401.pdf), [project](https://carloshinojosa.me/project/privacy-hpe/)
+
+#### Others (coded aperture, ...)
+
 - 2020 Spectral DiffuserCam: lensless snapshot hyperspectral imaging with a spectral filter array. [paper](https://opg.optica.org/optica/fulltext.cfm?uri=optica-7-10-1298&id=440114), [code](https://github.com/Waller-Lab/SpectralDiffuserCam)
-- 2021 Mask-ToF: Learning Microlens Masks for Flying Pixel Correction in Time-of-Flight Imaging. [paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Chugunov_Mask-ToF_Learning_Microlens_Masks_for_Flying_Pixel_Correction_in_Time-of-Flight_CVPR_2021_paper.pdf), [project](https://light.princeton.edu/publication/mask-tof/), [code](https://github.com/princeton-computational-imaging/MaskToF)s
+- 2021 Mask-ToF: Learning Microlens Masks for Flying Pixel Correction in Time-of-Flight Imaging. [paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Chugunov_Mask-ToF_Learning_Microlens_Masks_for_Flying_Pixel_Correction_in_Time-of-Flight_CVPR_2021_paper.pdf), [project](https://light.princeton.edu/publication/mask-tof/), [code](https://github.com/princeton-computational-imaging/MaskToF)
 - 2021 Shift-variant color-coded diffractive spectral imaging system. [paper](https://opg.optica.org/optica/fulltext.cfm?uri=optica-8-11-1424&id=464500), [video](https://www.youtube.com/watch?v=KNu2ZPLnR50), [code](https://github.com/jorgebaccauis/Shift-Variant-System)
-- 2021 Learning Privacy-Preserving Optics for Human Pose Estimation. [paper](https://carloshinojosa.me/files/ICCV2021/05401.pdf), [project](https://carloshinojosa.me/project/privacy-hpe/).
 
 ### 2. Ray tracing model
 
@@ -66,13 +68,14 @@ Ray tracing is the most common technique in optical design (e.g., ZEMAX and Code
 #### Lens
 
 - 2019 Learned large field-of-view imaging with thin-plate optics. [project](https://vccimaging.org/Publications/Peng&Sun2019LearnLargeFOV/), [video](https://dl.acm.org/doi/10.1145/3355089.3356526), [code](https://github.com/qilinsun/LearnedLargeFOV)
-- **2021 End-to-end complex lens design with differentiate ray tracing.** [paper](https://vccimaging.org/Publications/Sun2021DiffLens/Sun2021DiffLens.pdf), [project](https://vccimaging.org/Publications/Sun2021DiffLens/)
+- 2021 End-to-end complex lens design with differentiate ray tracing. [paper](https://vccimaging.org/Publications/Sun2021DiffLens/Sun2021DiffLens.pdf), [project](https://vccimaging.org/Publications/Sun2021DiffLens/)
 - 2021 End-to-end computational optics with a singlet lens for large depth-of-field imaging. [paper](https://opg.optica.org/DirectPDFAccess/D3ED35BC-DC94-4D40-B027C5426D406F5C_458026/oe-29-18-28530.pdf?da=1&id=458026&seq=0&mobile=no)
 - 2021 End-to-end learned single lens design using fast differentiable ray tracing. [paper](https://opg.optica.org/view_article.cfm?gotourl=%2FDirectPDFAccess%2F8497A765%2DB6C0%2D466D%2DA8216C0290B780F2%5F462662%2Fol%2D46%2D21%2D5453%2Epdf%3Fda%3D1%26id%3D462662%26seq%3D0%26mobile%3Dno&org=King%20Abdullah%20University%20of%20Science%20and%20Technology%20)
 - **2021 dO: A differentiable engine for Deep Lens design of computational imaging systems.** [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9919421), [project](https://vccimaging.org/Publications/Wang2022DiffOptics/), [code](https://github.com/vccimaging/DiffOptics)
 - 2022 Computational Optics for Mobile Terminals in Mass Production. [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9864277)
 - **2022 The Differentiable Lens: Compound Lens Search over Glass Surfaces and Materials for Object Detection.** [paper](https://arxiv.org/abs/2212.04441), [code](https://github.com/princeton-computational-imaging/joint-lens-design)
 - 2023 Curriculum Learning for ab initio Deep Learned Refractive Optics. [paper](https://arxiv.org/abs/2302.01089), [video](https://youtu.be/32XuSyM-J-8), [code](https://github.com/singer-yang/DeepLens)
+- **2023 Image Quality Is Not All You Want: Task-Driven Lens Design for Image Classification.** [paper](https://arxiv.org/abs/2305.17185)
 
 #### Others
 
@@ -87,6 +90,10 @@ The latest method is to model a group of optical systems by a network. The netwo
 - 2021 Deep learning-enabled framework for automatic lens design starting point generation. [paper](https://opg.optica.org/DirectPDFAccess/3CCFC208-3A65-4ABB-8B196EC9543FBAD5_446872/oe-29-3-3841.pdf?da=1&id=446872&seq=0&mobile=no), [project](https://lensnet.herokuapp.com/)
 - **2021 Differentiable Compound Optics and Processing Pipeline Optimization for End-To-end Camera Design.** [paper](https://light.cs.princeton.edu/wp-content/uploads/2021/02/DeepCompoundOptics.pdf), [project](https://light.princeton.edu/publication/deep_compound_optics/)
 - 2023 Aberration-Aware Depth-from-Focus. [paper](https://arxiv.org/abs/2303.04654)
+
+## Contribution
+
+Please feel free to open pull requests or email (xinge.yang@kaust.edu.sa) to contibute to this repo.
 
 ## Licenses
 
