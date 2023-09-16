@@ -75,7 +75,9 @@ Ray tracing is the most common technique in optical design (e.g., ZEMAX and Code
 - 2022 Computational Optics for Mobile Terminals in Mass Production. [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9864277)
 - **2022 The Differentiable Lens: Compound Lens Search over Glass Surfaces and Materials for Object Detection.** [paper](https://arxiv.org/abs/2212.04441), [code](https://github.com/princeton-computational-imaging/joint-lens-design)
 - 2023 Curriculum Learning for ab initio Deep Learned Refractive Optics. [paper](https://arxiv.org/abs/2302.01089), [video](https://youtu.be/32XuSyM-J-8), [code](https://github.com/singer-yang/DeepLens)
-- **2023 Image Quality Is Not All You Want: Task-Driven Lens Design for Image Classification.** [paper](https://arxiv.org/abs/2305.17185)
+- 2023 Image Quality Is Not All You Want: Task-Driven Lens Design for Image Classification. [paper](https://arxiv.org/abs/2305.17185)
+- 2023 Large depth-of-field ultra-compact microscope by progressive optimization and deep learning. [paper](https://www.nature.com/articles/s41467-023-39860-0), [code](https://github.com/yuanlong-o/mobilephone_EDOF)
+- 2023 Revealing the preference for correcting seperated aberrations in joint optic-image design. [paper](https://arxiv.org/pdf/2309.04342)
 
 #### Others
 
