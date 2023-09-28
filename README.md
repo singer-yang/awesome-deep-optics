@@ -68,13 +68,13 @@ Ray tracing is the most common technique in optical design (e.g., ZEMAX and Code
 #### Lens
 
 - 2019 Learned large field-of-view imaging with thin-plate optics. [project](https://vccimaging.org/Publications/Peng&Sun2019LearnLargeFOV/), [video](https://dl.acm.org/doi/10.1145/3355089.3356526), [code](https://github.com/qilinsun/LearnedLargeFOV)
-- 2021 End-to-end complex lens design with differentiate ray tracing. [paper](https://vccimaging.org/Publications/Sun2021DiffLens/Sun2021DiffLens.pdf), [project](https://vccimaging.org/Publications/Sun2021DiffLens/)
+- **2021 End-to-end complex lens design with differentiate ray tracing.** [paper](https://vccimaging.org/Publications/Sun2021DiffLens/Sun2021DiffLens.pdf), [project](https://vccimaging.org/Publications/Sun2021DiffLens/)
 - 2021 End-to-end computational optics with a singlet lens for large depth-of-field imaging. [paper](https://opg.optica.org/DirectPDFAccess/D3ED35BC-DC94-4D40-B027C5426D406F5C_458026/oe-29-18-28530.pdf?da=1&id=458026&seq=0&mobile=no)
 - 2021 End-to-end learned single lens design using fast differentiable ray tracing. [paper](https://opg.optica.org/view_article.cfm?gotourl=%2FDirectPDFAccess%2F8497A765%2DB6C0%2D466D%2DA8216C0290B780F2%5F462662%2Fol%2D46%2D21%2D5453%2Epdf%3Fda%3D1%26id%3D462662%26seq%3D0%26mobile%3Dno&org=King%20Abdullah%20University%20of%20Science%20and%20Technology%20)
 - **2021 dO: A differentiable engine for Deep Lens design of computational imaging systems.** [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9919421), [project](https://vccimaging.org/Publications/Wang2022DiffOptics/), [code](https://github.com/vccimaging/DiffOptics)
 - 2022 Computational Optics for Mobile Terminals in Mass Production. [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9864277)
 - **2022 The Differentiable Lens: Compound Lens Search over Glass Surfaces and Materials for Object Detection.** [paper](https://arxiv.org/abs/2212.04441), [code](https://github.com/princeton-computational-imaging/joint-lens-design)
-- 2023 Curriculum Learning for ab initio Deep Learned Refractive Optics. [paper](https://arxiv.org/abs/2302.01089), [video](https://youtu.be/32XuSyM-J-8), [code](https://github.com/singer-yang/DeepLens)
+- **2023 Curriculum Learning for ab initio Deep Learned Refractive Optics.** [paper](https://arxiv.org/abs/2302.01089), [video](https://youtu.be/32XuSyM-J-8), [code](https://github.com/singer-yang/DeepLens)
 - 2023 Image Quality Is Not All You Want: Task-Driven Lens Design for Image Classification. [paper](https://arxiv.org/abs/2305.17185)
 - 2023 Large depth-of-field ultra-compact microscope by progressive optimization and deep learning. [paper](https://www.nature.com/articles/s41467-023-39860-0), [code](https://github.com/yuanlong-o/mobilephone_EDOF)
 - 2023 Revealing the preference for correcting seperated aberrations in joint optic-image design. [paper](https://arxiv.org/pdf/2309.04342)
@@ -87,7 +87,7 @@ Ray tracing is the most common technique in optical design (e.g., ZEMAX and Code
 
 ### 3. Network Representation
 
-The latest method is to model a group of optical systems by a network. The network takes optical parameters (e.g., curvatures) as input and outputs the PSF. The PSF is usually computed by ray tracing, but a network representation can make the process differentiable and memory-efficient.
+The latest method is to model a group of optical systems by a network. The network takes optical parameters (e.g., curvatures) as input and outputs the PSF. By feeding massive training, the network learns a continous interpolation on optical parameters. In the End-to-End training, we can back-propagate gradients through the network to get the gradients for optical parameters.
 
 - 2021 Deep learning-enabled framework for automatic lens design starting point generation. [paper](https://opg.optica.org/DirectPDFAccess/3CCFC208-3A65-4ABB-8B196EC9543FBAD5_446872/oe-29-3-3841.pdf?da=1&id=446872&seq=0&mobile=no), [project](https://lensnet.herokuapp.com/)
 - **2021 Differentiable Compound Optics and Processing Pipeline Optimization for End-To-end Camera Design.** [paper](https://light.cs.princeton.edu/wp-content/uploads/2021/02/DeepCompoundOptics.pdf), [project](https://light.princeton.edu/publication/deep_compound_optics/)
