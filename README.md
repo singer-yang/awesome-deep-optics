@@ -15,7 +15,7 @@ Bring these three questions when you read the papers: (they will help a lot!)
 
 ## Imaging models
 
-(I am trying to start a new repo to collect papers for optical/imaging process simulation. How do you thin about it?)
+(I am trying to start a new repo to collect papers for optical/imaging process simulation. How do you think about it?)
 
 The following are some materials I think will help you learn the imaging process.
 
